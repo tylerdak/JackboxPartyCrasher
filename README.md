@@ -9,3 +9,5 @@ In addition, this program has a vocal countdown that's narrated by the system vo
 
 ---
 I'll provide more information soon.
+
+Please note that I am not in any way associated with Jackbox Games.
