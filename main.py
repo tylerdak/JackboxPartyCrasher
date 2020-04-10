@@ -9,11 +9,22 @@
 import random
 import os
 import time
+from isInt import *
 
 #PyAutoGUI is needed for this! pip install pyautogui
 import pyautogui
 
 
+print("Number of games in \"Past Games\" menu: ",end="")
+pastGamesAmt = input()
+
+while not isInt(pastGamesAmt):
+    print("Number of games in \"Past Games\" menu: ",end="")
+    pastGamesAmt = input()
+
+tabAmt = 9 + int(pastGamesAmt)
+
+os.system("say Starting in")
 for h in range(5):
     os.system("say " + str(5 - h))
     time.sleep(1)
@@ -35,7 +46,8 @@ for i in range(100):
     #that needs to be dismissed. If the connection is too slow, this may not be enough time.
     time.sleep(0.2)
     pyautogui.press('enter')
-    for i in range(9):
+
+    for i in range(tabAmt):
         pyautogui.press('tab')
 
 
