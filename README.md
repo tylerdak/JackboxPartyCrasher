@@ -1,6 +1,7 @@
 ![Jackbox Party Crasher](banner.png)
 
 This program quickly tries random 4 character long codes as Jackbox.tv codes to attempt to join random games. 
+(Not bragging that this was made in half an hour, just pointing out that it is not polished whatsoever)
 
 ## Description
 This program uses PyAutoGUI to type several codes of 4 characters into https://jackbox.tv/ in an attempt to join a random game. The program will first ask the user how many games are being stored in the Past Games menu of the site as this affects how the code field is selected. Once that number is found, the program begins with a countdown (results may vary) and then begins typing the codes and pressing enter accordingly. The user, before the countdown concludes, must have selected the code field (empty or with all text selected ideally, though this theoretically shouldn't matter). 
